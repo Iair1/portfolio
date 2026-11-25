@@ -1,0 +1,356 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root{
+    --fondo0: #cfe4f5;
+    --fondo1: #5a3a2e;
+    --fondo2: #143d66;
+    --fondo3: #f3e6dd;
+    --fondo-actual: #ffffff;
+    --fuenteDefecto: "Nunito", sans-serif;
+    --fuenteDefectoPeso: 600;
+    --ancho-pista: 2.7604vw;
+
+    --margen-sticky: 28px
+}
+
+body{ overflow-x: hidden; }
+
+p, h1, h2{
+    font-family: var(--fuenteDefecto);
+    font-weight: var(--fuenteDefectoPeso);
+}
+
+img {
+    height: auto;
+}
+
+.pagina{
+    width: 100%;
+    height: 100vh;
+}
+
+.centrarunelemento{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.pagTitulo{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+.puntapagina{
+    display: flex;
+    align-content: center;
+    justify-content: space-between;
+    width: 95%;
+    height: 24%;
+    align-items: center;
+}
+.portfolioLatex{
+    width: 68.85vw;
+}
+
+.recorrido{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.mitrayectoria{
+    color: white;
+    font-size: 100px;
+}
+.flechas{
+    height: 44.8vh;
+    width: 67vw;
+}
+.trescuadraditos{
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+}
+.trescuadraditos > div{
+    width: 14%;
+    aspect-ratio: 1/1;
+    background-color: var(--fondo3);
+    border-radius: 29px;
+    border-color: var(--fondo1);
+    border-width: 13px;
+    border-style: solid;
+}
+.trescuadraditos > div > p{
+    color: var(--fondo1);
+    font-size: 25px;
+    font-family: "QuickSand";
+    font-weight: var(--fuenteDefectoPeso);
+    text-align: center;
+    text-overflow: ellipsis;
+}
+
+.olimpiadas{
+    height: 1100vh;
+    display: flex;
+    background-color: var(--fondo-actual);
+}
+
+.mainmain{
+    height: 1100vh;
+    width: 87.29%;
+}
+
+.contenedorlinea{
+    height: 1100vh;
+    width: 12.71%;
+}
+
+.lineadetiempo{
+    background-color: black;
+    width: 10vw;
+    aspect-ratio: 1/1;
+    position: sticky;
+    top: 0;
+}
+
+.mediapagina{
+    height: 100vh;
+    max-height: 100vh;
+    width: 100%;
+    max-width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+.titulomediapaginadiv{
+    flex-grow: 1;
+    width: 100%;
+    display: flex;
+    align-items: center;
+}
+.mainmediapagina{
+    height: 80.56%;
+    width: 100%;
+}
+.titulomediapagina, .tituloPaginaCompleta{
+   font-size: 8.88vh;
+}
+
+
+.panel {
+      --progreso: 0;
+      position: sticky;
+      /*top: var(--margen-sticky);
+      bottom: var(--margen-sticky);*/
+      align-self: start;
+      /*height: calc(100vh - 2 * var(--margen-sticky));*/
+      width: 100%;
+
+      height: 100vh;
+      top: 0;
+      bottom: 0;
+      z-index: 100;
+    }
+    .pista {
+      position: absolute;
+      width: var(--ancho-pista);
+      height: 88.28vh;
+      background: black;
+      border-radius: 4000px;
+      outline-style: solid;
+        outline-width: 5px;
+        outline-color: white
+    }
+    .bola {
+      position: absolute;
+      left: 50%;
+      /* 0 = arriba; 0.5 = mitad; 1 = abajo. */
+      top: calc(var(--progreso) * 92% + 4%);
+      border: 3px solid #484848;
+      background: #989898;
+      box-shadow: 0 0 0 1px #989898;
+      transform: translate(-50%, -50%);
+      pointer-events: none;
+      /* Sin transition: la posición sigue el scroll sin retraso. */
+    }
+
+    .pistabolas{
+        position: relative;
+        height: calc(92% + var(--ancho-pista)*0.75);
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+    }
+    .bolitapagina, .bola{
+      width: 75%;
+      aspect-ratio: 1/1;
+      border-radius: 50%;
+    }
+    .bolitapagina{
+        background-color: white;
+    }
+    
+
+
+.mediapaginaImagenCostado{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.mediapaginaImagenCostado > aside{
+    width: 29.94vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.mediapaginaImagenCostado > aside > img{
+    width: 100%;
+    height: auto;
+}
+.cubreOma{
+    aspect-ratio: 1/1;
+    border-radius: 50%;
+}
+.mediapaginaImagenCostado > .cubreOma > img{
+    width: 90%;
+}
+.mediapaginaImagenCostado > p{
+    width: 55vw;
+}
+.textoLineaDeTiempo{
+    font-size: 40px;
+    width: 98%;
+}
+
+.mediapaginaImagenOpacaFondoParcial > .mainmediapagina{
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.fondoRio > .mainmediapagina{
+    background-size: 98.5% 96%;
+    height: 88vh;
+    background-image: url("./imgs/rio.png");
+}
+.fondoRio > .titulomediapaginadiv{
+    align-items: flex-end;
+}
+.fondoRio > .mainmediapagina > .textoLineaDeTiempo{
+    margin-left: 2.1%;
+}
+
+.imagenEnParrafo{
+    float: left;
+}
+.imoLogo{
+    height: 48.5vh;
+    width: auto;
+}
+.iberoLogo{
+    height: 49.25vh;
+    width: auto;
+}
+
+.fondoIbero > .mainmediapagina{
+    background-image: url("./imgs/ibero2.png");
+    background-size: 77vw auto;
+}
+
+.mediapaginaImagenFondoTotal > header > h2, .textoImagenFondoTotal{
+    position: relative;
+    color: white;
+    z-index: 8;
+}
+.imagenFondoTotal{
+    position: absolute;
+    width: 100%;
+    height: 100vh;
+    left: 0;
+    z-index: 4;
+    opacity: 0.6;
+}
+.fondoNegro{
+    position: absolute;
+    width: 100%;
+    height: 100vh;
+    left: 0;
+    z-index: 3;
+    background-color: black;
+}
+
+.paginaCompleta{
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+.paginaCompleta > header{
+    width: 100%;
+    height: 16.11vh;
+    display: flex;
+    align-items: flex-end;
+}
+.tituloPaginaCompleta{
+    margin-left: 2.135vw;
+}
+.olimpiadasGeo{
+    background-color: var(--fondo1);
+}
+.olimpiadasGeo > header > h2, .olimpiadasGeo > main > p{
+    color: white;
+}
+.olimpiadasGeo > main{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    height: 83vh
+}
+.olimpiadasGeo > main > img{
+    width: 23.54vw;
+    aspect-ratio: 1/1;
+}
+.olimpiadasGeo > main > p{
+    font-size: 35px;
+    width: 60vw;
+}
+.ort{
+    background-color: var(--fondo2);
+}
+.ortTitulo, .ortTexto, .fueraDeLoAcademico > header > h2, .fueraDeLoAcademicoTexto{
+    color: white;
+}
+.ortImagen{
+    width: 38.4vw;
+    height: 39.9vh;
+    float: right
+}
+.ort > main, .fueraDeLoAcademico > main{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 83vh;
+    width: 100%;
+}
+.ortTexto, .fueraDeLoAcademicoTexto{
+    font-size: 39px;
+    width: 90%;
+}
+.fueraDeLoAcademico{
+    background-color: #2E80C0;
+}
+.imagenTenis, .imagenHebraica{
+    width: 22vw;
+    aspect-ratio: 1/1;
+}
+.imagenTenis{
+    float: left;
+}
+.imagenHebraica{
+    float: inline-end
+}
