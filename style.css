@@ -354,3 +354,11 @@ img {
 .imagenHebraica{
     float: inline-end
 }
+.muchasGraciasImg{
+    width: 63.5vw;
+}
+.muchasGracias{
+    background-color: var(--fondo3);
+    width: 100vw;
+    height: 120vh;
+}
