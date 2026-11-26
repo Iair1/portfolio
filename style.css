@@ -228,6 +228,13 @@ img {
     font-size: 40px;
     width: 98%;
 }
+.textoOmaPrimerAño{
+    width: 55vw;
+    font-family: var(--fuenteDefecto);
+    font-weight: var(--fuenteDefectoPeso);
+    font-size: 37px;
+    margin-right: 1%;
+}
 
 .mediapaginaImagenOpacaFondoParcial > .mainmediapagina{
     background-repeat: no-repeat;
@@ -299,7 +306,7 @@ img {
 .tituloPaginaCompleta{
     margin-left: 2.135vw;
 }
-.olimpiadasGeo{
+.oliGeoTotal{
     background-color: var(--fondo1);
 }
 .olimpiadasGeo > header > h2, .olimpiadasGeo > main > p{
@@ -308,13 +315,35 @@ img {
 .olimpiadasGeo > main{
     display: flex;
     align-items: center;
-    justify-content: space-evenly;
+    justify-content: center;
     height: 83vh
 }
-.olimpiadasGeo > main > img{
-    width: 23.54vw;
-    aspect-ratio: 1/1;
+.olimpiadas{
+    flex-direction: row;
 }
+.olimpiadasGeo{
+    width: 70vw;
+    display: flex;
+    flex-direction: column;
+}
+.oliGeoTotal{
+    flex-direction: row;
+}
+.olimpiadasGeo > header{
+    width: 60vw;
+}
+.lasDosImagenesDeGeo{
+    width: 30vw;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.lasDosImagenesDeGeo > img{
+    width: 21.77vw;
+}
+
 .olimpiadasGeo > main > p{
     font-size: 35px;
     width: 60vw;
@@ -361,4 +390,26 @@ img {
     background-color: var(--fondo3);
     width: 100vw;
     height: 120vh;
+}
+
+.miIbero{
+    width: 28.65vw;
+    float: right;
+}
+
+.primerMetro{
+    width: 30vw;
+}
+.cubreOmaPrimerAño{
+    float: right;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 17.1vw;
+    aspect-ratio: 1/1;
+    border-radius: 50%;
+    margin-right: 1%;
+}
+.cubreOmaPrimerAño > img{
+    width: 90%;
 }
